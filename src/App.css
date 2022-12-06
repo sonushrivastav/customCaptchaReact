@@ -1,38 +1,138 @@
-.App {
+@import url("https://fonts.googlepis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:ital,wght@1,100&display=swap'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(146, 146, 199);
+}
+
+.wrapper{
+  background-color: #fff;
+  width: 485px;
+  border-radius: 10px;
+  padding: 22px 30px 40px;
+}
+
+.wrapper .captch_area{
+  display: flex;
+  height: 65px;
+  margin: 30px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper header{
+  color: #4db2ec;
+  font-size: 33px;
+  font-weight: 500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.captch_area .captch_img{
+  height: 100%;
+  position: relative;
+  width: 345px;
+  user-select: none;
+  background-color: #000;
+  border-radius: 5px;
+}
+.captch_img img{
+  width: 100%;
+  height: 100%;
+  opacity: .95;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.captch_img .captcha{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  letter-spacing: 10px !important;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 0 0 2px #a9a9a9;
+  color: rgb(177, 174, 174);
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Serif', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper button{
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4db2ec;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.captch_area .reload_btn{
+  width: 75px;
+  height: 100%;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.captch_area .reload_btn .icon{
+  transition: transform .3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.captch_area .reload_btn:hover .icon{
+  transform: rotate(15deg);
 }
+
+.wrapper .input_area{
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.input_area input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: 1px solid #bfbfbf;
+}
+.input_area input:is(:focus, :valid){
+  border: 2px solid #4db2ec;
+  padding-left: 19px;
+}
+
+.input_area .check_btn{
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  font-size: 17px;
+  height: 45px;
+  /* opacity: 1; 
+   pointer-events: none; */
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+
+/* .input_area input:valid + .check_btn{
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+.wrapper .status_txt{
+  display: none;
+  font-size: 18px;
+  /* color: #ff0000; */
+  text-align: center;
+  margin: 20px 0 -5px 0;
+}
+
