@@ -145,7 +145,6 @@ function App() {
           ref={inputRef}
           placeholder="Enter captcha"
           required
-          // onChange={(e) => setInput(e.target.value.split("").join(" "))}
           onChange={handlechange}
         />
 

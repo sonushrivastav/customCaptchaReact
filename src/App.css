@@ -1,6 +1,5 @@
 @import url("https://fonts.googlepis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600;700&display=swap");
 
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:ital,wght@1,100&display=swap'); */
 
 *{
   margin: 0;
@@ -123,10 +122,7 @@ body{
   transform: translateY(-50%);
 }
 
-/* .input_area input:valid + .check_btn{
-  opacity: 1;
-  pointer-events: auto;
-} */
+
 
 .wrapper .status_txt{
   display: none;
