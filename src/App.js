@@ -107,7 +107,7 @@ function App() {
     setCheckcaptcha(true);
     ref.current.style.display = "block";
     if (inputText == randomCaptcha) {
-      setCheckcaptcha("Nice! You don't appear to be robot");
+      setCheckcaptcha("Nice! you don't appear to be robot");
       ref.current.style.color = "green";
       setTimeout(() => {
         ref.current.style.display = "none";
@@ -118,7 +118,7 @@ function App() {
         getCaptch();
       }, 4000);
     } else {
-      setCheckcaptcha("Captcha not matched. Please try again!");
+      setCheckcaptcha("Captcha not matched. Please try again!!");
       ref.current.style.color = "red";
     }
   };
