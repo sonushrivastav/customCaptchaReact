@@ -116,8 +116,6 @@ body{
   top: 50%;
   font-size: 17px;
   height: 45px;
-  /* opacity: 1; 
-   pointer-events: none; */
   padding: 0 20px;
   transform: translateY(-50%);
 }
@@ -127,7 +125,6 @@ body{
 .wrapper .status_txt{
   display: none;
   font-size: 18px;
-  /* color: #ff0000; */
   text-align: center;
   margin: 20px 0 -5px 0;
 }
